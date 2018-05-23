@@ -2,7 +2,7 @@
 layout: post
 title:  "First post create with jekyll"
 date:   2018-05-23 11:17:38 -0400
-categories: development
+categories: development progress
 ---
 This is a first post crated with 
 a use of a bloging platform created 
