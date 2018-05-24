@@ -4,8 +4,10 @@ title: More
 permalink: /about/
 ---
 
-This webpage is created for the purpose of representing projects and apps created
-while taking Computer Science and Programming courses. As well as projects which 
-were created in a spare time as a hobby.
+## All posts
+
+{% for post in site.posts %}
+  * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+{% endfor %}
 
 {% include google-analytics.html %}
