@@ -24,6 +24,31 @@ body {
   min-height: 100vh;
   flex-direction: column; }
 
+.hero
+{
+  
+  /* The image used */
+    background-image: url("/assets/pic.jpg");
+
+    /* Set a specific height */
+    height:300px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text
+{
+   text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
