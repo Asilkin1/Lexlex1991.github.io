@@ -20,7 +20,7 @@ git clone https://${TRAVIS_TRAVELING}@github.com/Lexlex1991/Lexlex1991.github.io
 # build with Jekyll into "_site"
 bundle exec jekyll build
 
-# push
+# push to another 
 cd _site
 git config user.email "mrmajestickk@gmail.com"
 git config user.name "Alexander Silkin"
