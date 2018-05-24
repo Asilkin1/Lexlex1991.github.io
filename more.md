@@ -5,4 +5,4 @@ permalink: /more/
 ---
 
 Another page added
-{% include google-analytics.html %}
+

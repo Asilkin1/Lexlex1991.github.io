@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "json"
 gem "jekyll"
-gem "minima"
+gem "jekyll-swiss"
 gem "jekyll-sitemap"
 gem "jekyll-feed"
 gem "jekyll-paginate"
