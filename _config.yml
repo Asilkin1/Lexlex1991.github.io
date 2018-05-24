@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   and programming. Here I will store projects and 
   labs done in programming courses as well as some 
   of the materials required according to curriculum.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "asilkin.com" # the base hosstname & protocol for your site, e.g. http://example.com
 twitter_username: contributor
 github_username:  Lexlex1991
@@ -31,7 +31,7 @@ paginate: 5
 port: 4444
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
