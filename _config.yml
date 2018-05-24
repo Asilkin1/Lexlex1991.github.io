@@ -27,6 +27,9 @@ twitter_username: contributor
 github_username:  Lexlex1991
 paginate: 5
 
+#Google analytics
+google_analytics_id: UA-119838222-1
+
 #port
 port: 4444
 # Build settings
