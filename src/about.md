@@ -1,10 +1,8 @@
 ---
 layout: page
-title: More
-permalink: /about/
+title: Articles
+permalink: /articles/
 ---
-
-## All posts
 
 {% for post in site.posts %}
   * {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
