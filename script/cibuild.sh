@@ -15,7 +15,7 @@ rm -rf _site
 mkdir _site
 
 # clone remote repo to "_site"
-git clone https://${TRAVIS_TRAVELING}@github.com/Lexlex1991/Lexlex1991.github.io.git --branch gh-pages _site
+git clone https://${TRAVIS_TRAVELING}@github.com/Lexlex1991/Lexlex1991.github.io.git --branch master _site
 
 # build with Jekyll into "_site"
 bundle exec jekyll build
