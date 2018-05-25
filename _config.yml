@@ -52,14 +52,14 @@ timezone: America/Boston
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
  exclude:
-   - Gemfile
-   - Gemfile.lock
+   # - Gemfile
+   # - Gemfile.lock
    - CNAME
    - .gitignore
    - LICENSE
    - .sass-cache
-   - node_modules
-   - vendor/bundle/
-   - vendor/cache/
-   - vendor/gems/
-   - vendor/ruby/
+   # - node_modules
+   # - vendor/bundle/
+   # - vendor/cache/
+   # - vendor/gems/
+   # - vendor/ruby/
