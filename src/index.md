@@ -1,5 +1,5 @@
 ---
-layout:    post
+layout:    home
 ref:       index
 permalink: /
 ---
