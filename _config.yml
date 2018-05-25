@@ -17,14 +17,14 @@ source: src
 title: Study blog
 email: avsilkin@bhcc.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  This website is presenting projects and apps created 
+  This website is presenting projects and apps created
   while taking a formal training in Computer Science
-  and programming. Here I will store projects and 
-  labs done in programming courses as well as some 
+  and programming. Here I will store projects and
+  labs done in programming courses as well as some
   of the materials required according to curriculum.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "asilkin.com" # the base hosstname & protocol for your site, e.g. http://example.com
-twitter_username: contributor
+twitter_username: @mrmajestickk
 github_username:  Lexlex1991
 paginate: 5
 
