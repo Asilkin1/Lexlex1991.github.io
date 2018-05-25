@@ -26,4 +26,4 @@ git config user.email "mrmajestickk@gmail.com"
 git config user.name "Alexander Silkin"
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --force origin gh-pages
+git push --force origin master
