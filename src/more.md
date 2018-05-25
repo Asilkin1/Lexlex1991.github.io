@@ -7,6 +7,8 @@ permalink: /more/
 <ul>
 {% for post in site.posts %} 
 {% if post.categories contains "CIT237" %}
- <a href="#">post.title</a> 
+ <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
 {% endif %}
 {% endfor %}
