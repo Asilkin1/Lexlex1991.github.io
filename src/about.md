@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Articles
-permalink: /articles/
+permalink: /about/
 ---
 
 {% for post in site.posts %}
