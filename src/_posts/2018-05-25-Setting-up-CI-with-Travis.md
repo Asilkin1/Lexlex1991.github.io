@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setting up CI with Travis
+title: "Setting up CI with Travis"
 date: 2018-05-25 11:44:00
 categories: CIT120
 ---
