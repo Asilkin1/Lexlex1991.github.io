@@ -1,7 +1,5 @@
 ---
-layout:    default
+layout:    post
 ref:       index
 permalink: /
 ---
-{% include header.html%}
-{% include footer.html%}
