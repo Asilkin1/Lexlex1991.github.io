@@ -129,17 +129,18 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
-  font-style: italic;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
+  color: #EFE8F5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-stroke: 0.55px rgba(239, 232, 245, 0.97);
+  background-color: #2A2A2B;
+  border-left: 3.5px solid #71DEF1;
+  margin-left: -1em;
+  padding: 0.2em 1em;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
+
 
 
 
