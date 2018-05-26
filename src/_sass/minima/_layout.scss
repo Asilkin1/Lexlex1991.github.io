@@ -10,6 +10,16 @@
   position: relative;
 }
 
+.img-hero
+{
+  height:300px;
+  background-image: url("../../assets/comp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .site-title {
   @include relative-font-size(1.625);
   font-weight: 300;
