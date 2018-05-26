@@ -92,14 +92,16 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
+  color: #EFE8F5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-stroke: 0.55px rgba(239, 232, 245, 0.97);
+  background-color: #2A2A2B;
+  border-left: 3.5px solid #71DEF1;
+  margin-left: -1em;
+  padding: 0.2em 1em;
+  padding-top: 2px;
+  padding-bottom: 2px; }
 
 /**
  * Code formatting
