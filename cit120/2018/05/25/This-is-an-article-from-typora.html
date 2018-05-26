@@ -47,11 +47,20 @@
   <div class="post-content e-content" itemprop="articleBody">
     <h1 id="chapter-9---pointers">Chapter 9 - Pointers</h1>
 
-<p>[TOC]</p>
+<ul id="markdown-toc">
+  <li><a href="#chapter-9---pointers" id="markdown-toc-chapter-9---pointers">Chapter 9 - Pointers</a>    <ul>
+      <li><a href="#todo" id="markdown-toc-todo">TODO</a></li>
+      <li><a href="#what-is-it" id="markdown-toc-what-is-it">What is it?</a>        <ul>
+          <li><a href="#how-to-declare" id="markdown-toc-how-to-declare">How to declare?</a></li>
+          <li><a href="#comparing-address" id="markdown-toc-comparing-address">Comparing address?</a></li>
+          <li><a href="#comparing-values" id="markdown-toc-comparing-values">Comparing values?</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<hr />
-
-<p>###TODO</p>
+<h2 id="todo">TODO</h2>
 
 <ul class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />What is it?</li>
@@ -63,7 +72,7 @@
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Pointer’s math?</li>
 </ul>
 
-<p>###What is it?</p>
+<h2 id="what-is-it">What is it?</h2>
 
 <blockquote>
   <p>A pointer is a variable that holds a memory address where a value lives.</p>
@@ -72,8 +81,6 @@
 
   <p>As C++ is a statically typed language, the type is required to declare a pointer. This is the type of data that will live at the memory address it points to.</p>
 </blockquote>
-
-<hr />
 
 <h3 id="how-to-declare">How to declare?</h3>
 
@@ -86,14 +93,10 @@
 <span class="n">pointerTo</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
 </code></pre></div></div>
 
-<hr />
-
 <h3 id="comparing-address">Comparing address?</h3>
 
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">pointerTo</span> <span class="o">&lt;</span> <span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing address"</span><span class="p">;</span>
 </code></pre></div></div>
-
-<hr />
 
 <h3 id="comparing-values">Comparing values?</h3>
 
