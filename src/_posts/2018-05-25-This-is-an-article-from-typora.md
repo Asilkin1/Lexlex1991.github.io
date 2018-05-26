@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "This is an article from typora"
+title: "Chapter 9 - Pointers"
 date: 2018-05-25 11:44:00
 categories: CIT120
 ---
@@ -11,17 +11,7 @@ categories: CIT120
 {:toc}
 
 
-## TODO
-
-- [x] What is it?
-- [x] How to declare?
-- [ ] How to use?
-- [x] Comparing address?
-- [x] Comparing values?
-- [ ] Define a function with a pointers?
-- [ ] Pointer's math?
-
-## What is it?
+### What is it?
 
 > A pointer is a variable that holds a memory address where a value lives.
 >
