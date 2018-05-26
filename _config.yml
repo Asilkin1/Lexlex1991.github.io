@@ -40,6 +40,7 @@ port: 4444
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Custom
 show_excerpts: true
