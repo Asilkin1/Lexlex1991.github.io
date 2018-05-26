@@ -7,11 +7,11 @@ categories: CIT120
 
 # Chapter 9 - Pointers
 
-[TOC]
+- TOC
+{:toc}
 
-------
 
-###TODO
+## TODO
 
 - [x] What is it?
 - [x] How to declare?
@@ -21,7 +21,7 @@ categories: CIT120
 - [ ] Define a function with a pointers?
 - [ ] Pointer's math?
 
-###What is it?
+## What is it?
 
 > A pointer is a variable that holds a memory address where a value lives.
 >
@@ -29,7 +29,6 @@ categories: CIT120
 >
 > As C++ is a statically typed language, the type is required to declare a pointer. This is the type of data that will live at the memory address it points to.
 
-------
 
 ### How to declare?
 
@@ -43,15 +42,11 @@ int x = 1, *pointer = &x;
 pointerTo = &x;
 ```
 
-------
-
 ### Comparing address?
 
 ```c++
 if(pointerTo < pointer) cout << "Comparing address";
 ```
-
-------
 
 ### Comparing values?
 
