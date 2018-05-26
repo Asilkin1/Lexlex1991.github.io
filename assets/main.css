@@ -109,7 +109,7 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border: 1px solid #a5d6eb;
+  border: 1px solid #e8e8e8;
   border-radius: 3px;
   background-color: #eef; }
 
@@ -156,7 +156,7 @@ pre {
   width: 16px;
   height: 16px;
   display: inline-block;
-  fill: #247BA0;
+  fill: #828282;
   padding-right: 5px;
   vertical-align: text-top; }
 
@@ -172,24 +172,24 @@ table {
   text-align: left;
   color: #fff3c2;
   border-collapse: collapse;
-  border: 1px solid #a5d6eb; }
+  border: 1px solid #e8e8e8; }
   table tr:nth-child(even) {
-    background-color: #bee1f0; }
+    background-color: #f7f7f7; }
   table th, table td {
     padding: 10px 15px; }
   table th {
-    background-color: #b2dcee;
-    border: 1px solid #95cee7;
-    border-bottom-color: #73bfe0; }
+    background-color: #f0f0f0;
+    border: 1px solid #dedede;
+    border-bottom-color: #c9c9c9; }
   table td {
-    border: 1px solid #a5d6eb; }
+    border: 1px solid #e8e8e8; }
 
 /**
  * Site header
  */
 .site-header {
-  border-top: 5px solid #0d2b38;
-  border-bottom: 1px solid #a5d6eb;
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative; }
 
@@ -201,7 +201,7 @@ table {
   margin-bottom: 0;
   float: left; }
   .site-title, .site-title:visited {
-    color: #0d2b38; }
+    color: #424242; }
 
 .site-nav {
   float: right;
@@ -221,7 +221,7 @@ table {
       top: 9px;
       right: 15px;
       background-color: #50514F;
-      border: 1px solid #a5d6eb;
+      border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: right; }
       .site-nav label[for="nav-trigger"] {
@@ -240,7 +240,7 @@ table {
         padding-top: 10px;
         text-align: center; }
         .site-nav .menu-icon > svg {
-          fill: #0d2b38; }
+          fill: #424242; }
       .site-nav input ~ .trigger {
         clear: both;
         display: none; }
@@ -258,7 +258,7 @@ table {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #a5d6eb;
+  border-top: 1px solid #e8e8e8;
   padding: 30px 0; }
 
 .footer-heading {
@@ -272,7 +272,7 @@ table {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: #247BA0;
+  color: #828282;
   margin-left: -15px; }
 
 .footer-col {
@@ -327,7 +327,7 @@ table {
 
 .post-meta {
   font-size: 14px;
-  color: #247BA0; }
+  color: #828282; }
 
 .post-link {
   display: block;
