@@ -36,9 +36,7 @@ port: 4444
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+
 
 # Custom
 show_excerpts: true
@@ -59,3 +57,6 @@ timezone: America/Boston
    # - vendor/cache/
    # - vendor/gems/
    # - vendor/ruby/
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
