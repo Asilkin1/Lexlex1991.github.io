@@ -92,16 +92,14 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: #EFE8F5;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-text-stroke: 0.55px rgba(239, 232, 245, 0.97);
-  background-color: #2A2A2B;
-  border-left: 3.5px solid #71DEF1;
-  margin-left: -1em;
-  padding: 0.2em 1em;
-  padding-top: 2px;
-  padding-bottom: 2px; }
+  color: #133216;
+  border-left: 4px solid #53be5e;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
 
 /**
  * Code formatting
@@ -128,16 +126,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(100% - (30px * 2));
-  max-width: calc(100% - (30px * 2));
+  max-width: -webkit-calc(800px - (30px * 2));
+  max-width: calc(800px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 100%) {
+  @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(100% - (30px));
-      max-width: calc(100% - (30px));
+      max-width: -webkit-calc(800px - (30px));
+      max-width: calc(800px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -188,10 +186,14 @@ table {
  * Site header
  */
 .site-header {
-  border-top: 5px solid black;
-  border-bottom: 1px solid #53be5e;
+  border-top: 0px solid black;
+  border-bottom: 5px solid #53be5e;
+  background-color: white;
   min-height: 55.95px;
   position: relative; }
+
+.site-header a {
+  color: white; }
 
 .img-hero {
   height: 300px;
@@ -266,7 +268,7 @@ table {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #53be5e;
+  border-top: 5px solid #53be5e;
   padding: 30px 0; }
 
 .footer-heading {
@@ -300,7 +302,7 @@ table {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
 
-@media screen and (max-width: 100%) {
+@media screen and (max-width: 800px) {
   .footer-col-1,
   .footer-col-2 {
     width: -webkit-calc(50% - (30px / 2));
@@ -351,7 +353,7 @@ table {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1; }
-  @media screen and (max-width: 100%) {
+  @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
 
@@ -359,17 +361,17 @@ table {
   margin-bottom: 30px; }
   .post-content h2 {
     font-size: 32px; }
-    @media screen and (max-width: 100%) {
+    @media screen and (max-width: 800px) {
       .post-content h2 {
         font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
-    @media screen and (max-width: 100%) {
+    @media screen and (max-width: 800px) {
       .post-content h3 {
         font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
-    @media screen and (max-width: 100%) {
+    @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
 
