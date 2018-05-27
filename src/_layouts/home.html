@@ -16,7 +16,8 @@ layout: default
       <li style="background:white; padding:20px">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
+        <p>{{post.author}}</p>
+        <h3 style="font-size: 34px;">
           
             {{ post.title | escape }}
         
@@ -24,8 +25,9 @@ layout: default
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
-        <a style="font-size:18px; border:1px solid grey;border-radius:10px; background:none; width:90px; text-decoration: none; padding:10px"class="post-link" href="{{ post.url | relative_url }}">Read more
+        <a style="font-size:18px; border:1px solid grey;border-radius:10px; background:none; width:90px; text-decoration: none; padding:10px;"class="post-link" href="{{ post.url | relative_url }}">Read more
           </a>
+          <p style="font-size:10px; background:none; text-decoration: none; padding:10px;">{{post.tags[0]}}</p>
       </li>
       {%- endfor -%}
     </ul>

@@ -3,6 +3,8 @@ layout: post
 title: "Chapter 9 - Pointers"
 date: 2018-05-25 11:44:00
 categories: CIT120
+author: Alex Silkin
+tags: "#CIT237"
 ---
 
 # Chapter 9 - Pointers

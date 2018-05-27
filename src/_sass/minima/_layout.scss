@@ -18,12 +18,27 @@
 
 .img-hero
 {
-  height:300px;
+  display:flex;
   background-image: url("../../assets/comp.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  align-items: center;
+  width:100%;
+  height:300px;
+}
+
+.img-hero h1
+{
+  text-align: center;
+  width: 600px;
+  margin: 0px auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color:#fffC;
+  font-size:90px;
 }
 
 .site-title {
