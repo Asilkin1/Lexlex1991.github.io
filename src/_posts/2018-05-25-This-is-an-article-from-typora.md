@@ -7,7 +7,6 @@ author: Alex Silkin
 tags: "#CIT237"
 ---
 
-# Chapter 9 - Pointers
 
 - TOC
 {:toc}
