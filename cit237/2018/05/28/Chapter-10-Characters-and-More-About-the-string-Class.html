@@ -18,7 +18,7 @@
           </span>
         </label>
 
-        <div class="trigger" ><a class="page-link" href="/CIT120/">CIT120</a><a class="page-link" href="/CIT237/">CIT237</a><a class="page-link" href="/about/">All articles</a></div>
+        <div class="trigger" ><a class="page-link" href="/CIT120/">CIT120</a><a class="page-link" href="/CIT237/">CIT237</a></div>
       </nav></div>
 </header>
 <div class="img-hero">
@@ -29,53 +29,32 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Chapter 9 - Pointers</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Chapter 10 - Characters and Strings</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2018-05-25T11:44:00+00:00" itemprop="datePublished">May 25, 2018
+      <time class="dt-published" datetime="2018-05-28T11:44:00+00:00" itemprop="datePublished">May 28, 2018
       </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Alex Silkin</span></span></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="markdown-toc">
-  <li><a href="#what-is-it" id="markdown-toc-what-is-it">What is it?</a></li>
-  <li><a href="#how-to-declare" id="markdown-toc-how-to-declare">How to declare?</a></li>
-  <li><a href="#comparing-address" id="markdown-toc-comparing-address">Comparing address?</a></li>
-  <li><a href="#comparing-values" id="markdown-toc-comparing-values">Comparing values?</a></li>
+  <li><a href="#characters-testing" id="markdown-toc-characters-testing">Characters testing</a></li>
+  <li><a href="#characters-case-conversion" id="markdown-toc-characters-case-conversion">Characters case conversion</a></li>
+  <li><a href="#c-strings" id="markdown-toc-c-strings">C-Strings</a></li>
+  <li><a href="#library-functions-for-c-strings" id="markdown-toc-library-functions-for-c-strings">Library functions for C-Strings</a></li>
+  <li><a href="#numeric-conversion-functions" id="markdown-toc-numeric-conversion-functions">Numeric conversion functions</a></li>
+  <li><a href="#focus-on-software-engineering" id="markdown-toc-focus-on-software-engineering">Focus on software engineering</a></li>
+  <li><a href="#c-string-class" id="markdown-toc-c-string-class">C++ string class</a></li>
 </ul>
 
-<h3 id="what-is-it">What is it?</h3>
+<h3 id="characters-testing">Characters testing</h3>
+<h3 id="characters-case-conversion">Characters case conversion</h3>
+<h3 id="c-strings">C-Strings</h3>
+<h3 id="library-functions-for-c-strings">Library functions for C-Strings</h3>
+<h3 id="numeric-conversion-functions">Numeric conversion functions</h3>
+<h3 id="focus-on-software-engineering">Focus on software engineering</h3>
+<h3 id="c-string-class">C++ string class</h3>
 
-<blockquote>
-  <p>A pointer is a variable that holds a memory address where a value lives.</p>
-
-  <p>A pointer is declared using the <code class="highlighter-rouge">*</code> operator before an identifier.</p>
-
-  <p>As C++ is a statically typed language, the type is required to declare a pointer. This is the type of data that will live at the memory address it points to.</p>
-</blockquote>
-
-<h3 id="how-to-declare">How to declare?</h3>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// A pointer which pointing to a variable of type int</span>
-<span class="kt">int</span> <span class="o">*</span><span class="n">pointerTo</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="c1">// OR in one line</span>
-<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
-<span class="c1">// Store address of x in the pointer;</span>
-<span class="n">pointerTo</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h3 id="comparing-address">Comparing address?</h3>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">pointerTo</span> <span class="o">&lt;</span> <span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing address"</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h3 id="comparing-values">Comparing values?</h3>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">pointerTo</span> <span class="o">==</span> <span class="o">*</span><span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing values"</span><span class="p">;</span>
-</code></pre></div></div>
-
-
-  </div><a class="u-url" href="/cit120/2018/05/25/This-is-an-article-from-typora.html" hidden></a>
+  </div><a class="u-url" href="/cit237/2018/05/28/Chapter-10-Characters-and-More-About-the-string-Class.html" hidden></a>
 </article>
 
       </div>

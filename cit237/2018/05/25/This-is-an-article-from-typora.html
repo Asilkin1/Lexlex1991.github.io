@@ -29,20 +29,53 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Some articles are just so long they deserve a really long title to see if things will break well</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Chapter 9 - Pointers</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2016-05-20T00:00:00+00:00" itemprop="datePublished">May 20, 2016
-      </time></p>
+      <time class="dt-published" datetime="2018-05-25T11:44:00+00:00" itemprop="datePublished">May 25, 2018
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Alex Silkin</span></span></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+    <ul id="markdown-toc">
+  <li><a href="#what-is-it" id="markdown-toc-what-is-it">What is it?</a></li>
+  <li><a href="#how-to-declare" id="markdown-toc-how-to-declare">How to declare?</a></li>
+  <li><a href="#comparing-address" id="markdown-toc-comparing-address">Comparing address?</a></li>
+  <li><a href="#comparing-values" id="markdown-toc-comparing-values">Comparing values?</a></li>
+</ul>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+<h3 id="what-is-it">What is it?</h3>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.</p>
+<blockquote>
+  <p>A pointer is a variable that holds a memory address where a value lives.</p>
 
-  </div><a class="u-url" href="/misc/2016/05/20/super-long-article.html" hidden></a>
+  <p>A pointer is declared using the <code class="highlighter-rouge">*</code> operator before an identifier.</p>
+
+  <p>As C++ is a statically typed language, the type is required to declare a pointer. This is the type of data that will live at the memory address it points to.</p>
+</blockquote>
+
+<h3 id="how-to-declare">How to declare?</h3>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// A pointer which pointing to a variable of type int</span>
+<span class="kt">int</span> <span class="o">*</span><span class="n">pointerTo</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">// OR in one line</span>
+<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
+<span class="c1">// Store address of x in the pointer;</span>
+<span class="n">pointerTo</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="comparing-address">Comparing address?</h3>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">pointerTo</span> <span class="o">&lt;</span> <span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing address"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="comparing-values">Comparing values?</h3>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">pointerTo</span> <span class="o">==</span> <span class="o">*</span><span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing values"</span><span class="p">;</span>
+</code></pre></div></div>
+
+
+  </div><a class="u-url" href="/cit237/2018/05/25/This-is-an-article-from-typora.html" hidden></a>
 </article>
 
       </div>
