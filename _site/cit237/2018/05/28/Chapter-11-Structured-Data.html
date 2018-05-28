@@ -29,53 +29,43 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Chapter 9 - Pointers</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Chapter 11 - Structured Data</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2018-05-25T11:44:00+00:00" itemprop="datePublished">May 25, 2018
+      <time class="dt-published" datetime="2018-05-28T11:44:00+00:00" itemprop="datePublished">May 28, 2018
       </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Alex Silkin</span></span></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="markdown-toc">
-  <li><a href="#what-is-it" id="markdown-toc-what-is-it">What is it?</a></li>
-  <li><a href="#how-to-declare" id="markdown-toc-how-to-declare">How to declare?</a></li>
-  <li><a href="#comparing-address" id="markdown-toc-comparing-address">Comparing address?</a></li>
-  <li><a href="#comparing-values" id="markdown-toc-comparing-values">Comparing values?</a></li>
+  <li><a href="#abstract-data-types" id="markdown-toc-abstract-data-types">Abstract Data Types</a></li>
+  <li><a href="#focus-on-software-engineering-combining-data-into-structures" id="markdown-toc-focus-on-software-engineering-combining-data-into-structures">Focus on Software Engineering: Combining Data into Structures</a></li>
+  <li><a href="#accessing-structure-members" id="markdown-toc-accessing-structure-members">Accessing Structure Members</a></li>
+  <li><a href="#initializing-a-structure" id="markdown-toc-initializing-a-structure">Initializing a Structure</a></li>
+  <li><a href="#arrays-of-structures" id="markdown-toc-arrays-of-structures">Arrays of Structures</a></li>
+  <li><a href="#focus-on-software-engineering-nested-structures" id="markdown-toc-focus-on-software-engineering-nested-structures">Focus on Software Engineering: Nested Structures</a></li>
+  <li><a href="#structures-as-function-arguments" id="markdown-toc-structures-as-function-arguments">Structures as Function Arguments</a></li>
+  <li><a href="#returning-a-structure-from-a-function" id="markdown-toc-returning-a-structure-from-a-function">Returning a Structure from a Function</a></li>
+  <li><a href="#pointers-to-structures" id="markdown-toc-pointers-to-structures">Pointers to Structures</a></li>
+  <li><a href="#focus-on-software-engineering-when-to-use---when-to-use---" id="markdown-toc-focus-on-software-engineering-when-to-use---when-to-use---">Focus on Software Engineering: When to Use <code class="highlighter-rouge">.</code> , When to Use <code class="highlighter-rouge">-&gt;</code> ,</a></li>
+  <li><a href="#unions" id="markdown-toc-unions">Unions</a></li>
+  <li><a href="#enumerated-data-types" id="markdown-toc-enumerated-data-types">Enumerated Data Types</a></li>
 </ul>
 
-<h3 id="what-is-it">What is it?</h3>
+<h3 id="abstract-data-types">Abstract Data Types</h3>
+<h3 id="focus-on-software-engineering-combining-data-into-structures">Focus on Software Engineering: Combining Data into Structures</h3>
+<h3 id="accessing-structure-members">Accessing Structure Members</h3>
+<h3 id="initializing-a-structure">Initializing a Structure</h3>
+<h3 id="arrays-of-structures">Arrays of Structures</h3>
+<h3 id="focus-on-software-engineering-nested-structures">Focus on Software Engineering: Nested Structures</h3>
+<h3 id="structures-as-function-arguments">Structures as Function Arguments</h3>
+<h3 id="returning-a-structure-from-a-function">Returning a Structure from a Function</h3>
+<h3 id="pointers-to-structures">Pointers to Structures</h3>
+<h3 id="focus-on-software-engineering-when-to-use---when-to-use---">Focus on Software Engineering: When to Use <code class="highlighter-rouge">.</code> , When to Use <code class="highlighter-rouge">-&gt;</code> ,</h3>
+<p>and When to Use <code class="highlighter-rouge">*</code></p>
+<h3 id="unions">Unions</h3>
+<h3 id="enumerated-data-types">Enumerated Data Types</h3>
 
-<blockquote>
-  <p>A pointer is a variable that holds a memory address where a value lives.</p>
-
-  <p>A pointer is declared using the <code class="highlighter-rouge">*</code> operator before an identifier.</p>
-
-  <p>As C++ is a statically typed language, the type is required to declare a pointer. This is the type of data that will live at the memory address it points to.</p>
-</blockquote>
-
-<h3 id="how-to-declare">How to declare?</h3>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// A pointer which pointing to a variable of type int</span>
-<span class="kt">int</span> <span class="o">*</span><span class="n">pointerTo</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="c1">// OR in one line</span>
-<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
-<span class="c1">// Store address of x in the pointer;</span>
-<span class="n">pointerTo</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h3 id="comparing-address">Comparing address?</h3>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">pointerTo</span> <span class="o">&lt;</span> <span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing address"</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h3 id="comparing-values">Comparing values?</h3>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">pointerTo</span> <span class="o">==</span> <span class="o">*</span><span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing values"</span><span class="p">;</span>
-</code></pre></div></div>
-
-
-  </div><a class="u-url" href="/cit120/2018/05/25/This-is-an-article-from-typora.html" hidden></a>
+  </div><a class="u-url" href="/cit237/2018/05/28/Chapter-11-Structured-Data.html" hidden></a>
 </article>
 
       </div>
