@@ -1,4 +1,5 @@
 language: ruby
+cache: bundler
 # only run CI-builds on master branch
 branches:
   only:
