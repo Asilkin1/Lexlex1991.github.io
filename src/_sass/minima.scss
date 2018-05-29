@@ -35,7 +35,7 @@ $on-laptop:        800px !default;
 // }
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
-    @content;
+    
   }
 }
 
