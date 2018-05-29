@@ -140,8 +140,7 @@ pre {
       max-width: -webkit-calc(800px - (30px));
       max-width: calc(800px - (30px));
       padding-right: 15px;
-      padding-left: 15px;
-      z-index: 101; } }
+      padding-left: 15px; } }
 
 /**
  * Clearfix
@@ -212,7 +211,6 @@ table {
 
 .img-hero h1 {
   text-align: center;
-  width: 600px;
   margin: 0px auto;
   position: absolute;
   left: 0;
@@ -231,6 +229,7 @@ table {
     color: black; }
 
 .site-nav {
+  z-index: 101;
   float: right;
   line-height: 54px; }
   .site-nav .nav-trigger {
@@ -250,8 +249,7 @@ table {
       background-color: #f3f3f3;
       border: 1px solid #53be5e;
       border-radius: 5px;
-      text-align: right;
-      z-index: 101; }
+      text-align: right; }
       .site-nav label[for="nav-trigger"] {
         display: block;
         float: right;
@@ -328,16 +326,12 @@ table {
 
   .footer-col-3 {
     width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); }
-
-  z-index: 101; }
+    width: calc(100% - (30px / 2)); } }
 @media screen and (max-width: 600px) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (30px / 2));
-    width: calc(100% - (30px / 2)); }
-
-  z-index: 101; }
+    width: calc(100% - (30px / 2)); } }
 /**
  * Page content
  */
@@ -377,8 +371,7 @@ table {
   line-height: 1; }
   @media screen and (max-width: 800px) {
     .post-title {
-      font-size: 36px;
-      z-index: 101; } }
+      font-size: 36px; } }
 
 .post-content {
   margin-bottom: 30px; }
@@ -386,20 +379,17 @@ table {
     font-size: 32px; }
     @media screen and (max-width: 800px) {
       .post-content h2 {
-        font-size: 28px;
-        z-index: 101; } }
+        font-size: 28px; } }
   .post-content h3 {
     font-size: 26px; }
     @media screen and (max-width: 800px) {
       .post-content h3 {
-        font-size: 22px;
-        z-index: 101; } }
+        font-size: 22px; } }
   .post-content h4 {
     font-size: 20px; }
     @media screen and (max-width: 800px) {
       .post-content h4 {
-        font-size: 18px;
-        z-index: 101; } }
+        font-size: 18px; } }
 
 /**
  * Syntax highlighting styles

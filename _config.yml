@@ -57,6 +57,6 @@ timezone: America/Boston
    # - vendor/cache/
    # - vendor/gems/
    # - vendor/ruby/
-gems:
+plugins:
   - jekyll-feed
   - jekyll-seo-tag

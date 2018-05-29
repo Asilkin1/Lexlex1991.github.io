@@ -37,7 +37,7 @@
   left: 0;
   right: 0;
   color:#fffC;
-  font-size:60px;
+  font-size:90px;
 }
 
 .site-title {
@@ -55,13 +55,12 @@
 }
 
 .site-nav {
-
+  z-index:101;
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
       display: none;
-
   }
 
   .menu-icon {
@@ -79,7 +78,6 @@
   }
 
   @include media-query($on-palm) {
-  
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
