@@ -36,7 +36,7 @@ port: 4444
 
 # Build settings
 markdown: kramdown
-
+highlighter: rouge
 
 # Custom
 show_excerpts: true
