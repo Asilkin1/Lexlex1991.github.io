@@ -38,6 +38,9 @@ port: 4444
 markdown: kramdown
 highlighter: rouge
 
+sass: 
+  style: compressed;
+
 # Custom
 show_excerpts: true
 timezone: America/Boston
