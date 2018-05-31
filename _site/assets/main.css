@@ -530,3 +530,20 @@ table {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.previous-next-post-links {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2rem;
+  font-size: 16px; }
+  .previous-next-post-links div {
+    width: 48%; }
+  .previous-next-post-links .arrow::before, .previous-next-post-links .arrow::after {
+    display: inline-block;
+    text-decoration: none; }
+  .previous-next-post-links .arrow__left::before {
+    content: "\2190";
+    padding-right: .3em; }
+  .previous-next-post-links .arrow__right::after {
+    content: "\2192";
+    padding-left: .3em; }
