@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"><link type="application/atom+xml" rel="alternate" href="asilkin.com/feed.xml" title="Study blog" /></head>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--HIGHLIGHT.JS --><link type="application/atom+xml" rel="alternate" href="asilkin.com/feed.xml" title="Study blog" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/"><i class="fas fa-terminal"></i></a><nav class="site-nav">
@@ -37,7 +39,12 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="markdown-toc">
-  <li><a href="#file-operations" id="markdown-toc-file-operations">File Operations</a></li>
+  <li><a href="#file-operations" id="markdown-toc-file-operations">File Operations</a>    <ul>
+      <li><a href="#using-fstream-with-modes" id="markdown-toc-using-fstream-with-modes">Using fstream with modes</a></li>
+      <li><a href="#more-modes" id="markdown-toc-more-modes">More modes</a></li>
+      <li><a href="#several-flags" id="markdown-toc-several-flags">Several flags</a></li>
+    </ul>
+  </li>
   <li><a href="#file-output-formatting" id="markdown-toc-file-output-formatting">File Output Formatting</a></li>
   <li><a href="#passing-file-stream-objects-to-functions" id="markdown-toc-passing-file-stream-objects-to-functions">Passing File Stream Objects to Functions</a></li>
   <li><a href="#more-detailed-error-testing" id="markdown-toc-more-detailed-error-testing">More Detailed Error Testing</a></li>
@@ -50,7 +57,128 @@
 </ul>
 
 <h3 id="file-operations">File Operations</h3>
+<blockquote>
+  <p>NOTE: File - a collection of data that is usually stored on a computer’s disk.
+Data can be saved to files and then later reused.</p>
+</blockquote>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Data type</strong></td>
+      <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ifstream</code></td>
+      <td>Input file stream. Only can be used to read data from files into RAM.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">ofstream</code></td>
+      <td>Output file stream. Can be used to create a file and write data to them.</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">fstream</code></td>
+      <td>File stream. Can be used to create files, write data to them, and read data from them.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="using-fstream-with-modes">Using fstream with modes</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Declare</strong></td>
+      <td><strong>Access flag</strong> to open in input mode</td>
+    </tr>
+    <tr>
+      <td>fstream ourFile</td>
+      <td>ourFile.open(“test.txt”, ios::in)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Which means that the file will be opened in read mode.</p>
+
+<h4 id="more-modes">More modes</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Flag</strong></td>
+      <td><strong>Description</strong></td>
+    </tr>
+    <tr>
+      <td>ios::app</td>
+      <td>Append mode.File will be created if it doesn’t exist</td>
+    </tr>
+    <tr>
+      <td>ios::ate</td>
+      <td>If file exist, the prograg goes to the end of the file.Output can be written anywhere</td>
+    </tr>
+    <tr>
+      <td>ios::binary</td>
+      <td>Binary mode. Data is written or read from in a binary format.</td>
+    </tr>
+    <tr>
+      <td>ios::in</td>
+      <td>Input mode. Data will be read from the file. If file doens’t exist, it won’t be created.</td>
+    </tr>
+    <tr>
+      <td>ios::out</td>
+      <td>Output mode. Data will be written to the file. File’s content will be deleted if it already exists.</td>
+    </tr>
+    <tr>
+      <td>ios::truncate</td>
+      <td>If the file alrady exists, its content will be removed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="several-flags">Several flags</h4>
+<p>File will be opened for input and output at the same time.</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ourFile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="s">"test.txt"</span><span class="p">,</span> <span class="n">ios</span><span class="o">::</span><span class="n">in</span> <span class="o">|</span> <span class="n">ios</span><span class="o">::</span><span class="n">out</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>File will be opened in wirite mode. Content will be added to the end of the file.</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ourFile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="s">"text.txt"</span><span class="p">,</span> <span class="n">ios</span><span class="o">::</span><span class="n">out</span> <span class="o">|</span> <span class="n">ios</span><span class="o">:</span><span class="p">;</span><span class="n">app</span><span class="p">);</span>
+</code></pre></div></div>
 <h3 id="file-output-formatting">File Output Formatting</h3>
+<blockquote>
+  <p><strong>NOTE</strong> File output format can be formatted in a same way that screen output is formatted.</p>
+</blockquote>
+
+<p>Format for fixed point notation.</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ourFile</span> <span class="o">&lt;&lt;</span> <span class="n">fixed</span><span class="p">;</span>
+<span class="n">ourFile</span> <span class="o">&lt;&lt;</span> <span class="n">num</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+</code></pre></div></div>
+<p>Printing three rows of numbers into the file</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+#include &lt;iomanip&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="k">const</span> <span class="kt">int</span> <span class="n">ROWS</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+	<span class="k">const</span> <span class="kt">int</span> <span class="n">COLS</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+	<span class="kt">int</span> <span class="n">nums</span><span class="p">[</span><span class="n">ROWS</span><span class="p">][</span><span class="n">COLS</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">};</span>
+	<span class="n">fstream</span> <span class="n">outFile</span><span class="p">(</span><span class="s">"table.txt"</span><span class="p">,</span> <span class="n">ios</span><span class="o">::</span><span class="n">out</span><span class="p">);</span>
+
+	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">ROWS</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span>
+	<span class="p">{</span>
+		<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">COLS</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span>
+		<span class="p">{</span>
+			<span class="n">outFile</span> <span class="o">&lt;&lt;</span> <span class="n">setw</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> <span class="o">&lt;&lt;</span> <span class="n">nums</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	
+	<span class="n">outFile</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Done</span><span class="se">\n</span><span class="s">"</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 <h3 id="passing-file-stream-objects-to-functions">Passing File Stream Objects to Functions</h3>
 <h3 id="more-detailed-error-testing">More Detailed Error Testing</h3>
 <h3 id="member-functions-for-reading-and-writing-files">Member Functions for Reading and Writing Files</h3>
@@ -60,7 +188,19 @@
 <h3 id="random-access-files">Random-Access Files</h3>
 <h3 id="opening-a-file-for-both-input-and-output">Opening a File for Both Input and Output</h3>
 
-  </div><a class="u-url" href="/cit237/2018/05/28/Chapter-12-Advanced-File-Operations.html" hidden></a>
+  </div><div class="previous-next-post-links">
+    <div>
+        
+            <a class="arrow arrow__left" href="//cit237/2018/05/28/Chapter-11-Structured-Data.html">Chapter 11 - Structured Data</a>
+        
+    </div>
+
+    <div>
+        
+    </div>
+</div>
+
+  <a class="u-url" href="/cit237/2018/05/28/Chapter-12-Advanced-File-Operations.html" hidden></a>
 </article>
 
       </div>
