@@ -1,0 +1,32 @@
+.previous-next-post-links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+
+    font-size: $tertiary-info-font-size;
+
+    div {
+        width: 48%;
+    }
+
+    .arrow {
+        &::before, &::after {
+            display:inline-block;
+            text-decoration: none;
+        }
+    }
+
+    .arrow__left {
+        &::before {
+            content: "\2190";
+            padding-right: .3em;
+        }
+    }
+
+    .arrow__right {
+        &::after {
+            content: "\2192";
+            padding-left: .3em;
+        }
+    }
+}
