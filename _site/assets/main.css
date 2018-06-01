@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #181a00;
-  background-color: #FFFFF;
+  background-color: white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -245,7 +245,7 @@ table {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #FFFFF;
+      background-color: white;
       border: 1px solid #53be5e;
       border-radius: 5px;
       text-align: right; }
@@ -356,7 +356,17 @@ table {
 
 .post-link {
   display: block;
+  font-size: 18px;
+  border: 1px solid #133216;
+  border-radius: 10px;
+  background: #133216;
+  width: 90px;
+  text-decoration: none;
+  padding: 10px;
   font-size: 24px; }
+
+.post-link:hover {
+  background: #53be5e; }
 
 /**
  * Posts
@@ -559,9 +569,9 @@ table {
   padding: 0; }
 
 .tag {
-  background: #eee;
+  background: #53be5e;
   border-radius: 3px 0 0 3px;
-  color: #181a00;
+  color: white;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -588,7 +598,7 @@ table {
 .tag::after {
   background: #fff;
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
+  border-left: 10px solid #53be5e;
   border-top: 13px solid transparent;
   content: '';
   position: absolute;
@@ -596,8 +606,9 @@ table {
   top: 0; }
 
 .tag:hover {
-  background-color: #53be5e;
-  color: white; }
+  background-color: #133216;
+  color: white;
+  text-decoration-line: none; }
 
 .tag:hover::after {
-  border-left-color: #53be5e; }
+  border-left-color: #133216; }

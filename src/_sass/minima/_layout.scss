@@ -235,7 +235,19 @@
 
 .post-link {
   display: block;
+  font-size:18px; 
+  border:1px solid $grey-color;
+  border-radius:10px; 
+  background:$grey-color; 
+  width:90px; 
+  text-decoration: none; 
+  padding:10px;
   @include relative-font-size(1.5);
+}
+
+.post-link:hover
+{
+  background: $grey-color-light;
 }
 
 

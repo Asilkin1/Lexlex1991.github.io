@@ -9,9 +9,9 @@
 
 .tag
 {
-  background: #eee;
+  background: $grey-color-light;
   border-radius: 3px 0 0 3px;
-  color: $text-color;
+  color: white;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -41,7 +41,7 @@
 .tag::after {
   background: #fff;
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
+  border-left: 10px solid $grey-color-light;
   border-top: 13px solid transparent;
   content: '';
   position: absolute;
@@ -50,10 +50,11 @@
 }
 
 .tag:hover {
-  background-color: $grey-color-light;
+  background-color: $grey-color;
   color: white;
+  text-decoration-line:none;
 }
 
 .tag:hover::after {
-   border-left-color: $grey-color-light; 
+   border-left-color: $grey-color; 
 }
