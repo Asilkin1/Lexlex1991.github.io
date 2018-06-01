@@ -6,8 +6,17 @@
     font-size: $base-font-size;
 
     div {
-        width: 48%;
+        width: 50%;
+
     }
+    div a
+    {
+     	padding: 10px;
+ 		background-color:white;
+ 		overflow:hidden;
+
+    }
+   
 
     .arrow {
         &::before, &::after {
