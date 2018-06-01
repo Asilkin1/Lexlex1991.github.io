@@ -8,12 +8,15 @@ layout: default
   {%- endif -%}
 
   {{ content }}
-
+  
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
-      <li style="background:white; padding:20px">
+      <li style="background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <p>{{post.author}}</p>
