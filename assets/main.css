@@ -11,7 +11,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #181a00;
-  background-color: #f3f3f3;
+  background-color: #FFFFF;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -238,7 +238,7 @@ table td {
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: #f3f3f3;
+    background-color: #FFFFF;
     border: 1px solid #53be5e;
     border-radius: 5px;
     text-align: right; }
@@ -552,14 +552,14 @@ table td {
 .tag {
   background: #eee;
   border-radius: 3px 0 0 3px;
-  color: #999;
+  color: #181a00;
   display: inline-block;
   height: 26px;
   line-height: 26px;
   padding: 0 20px 0 23px;
   position: relative;
   margin: 0 10px 10px 0;
-  text-decoration: none;
+  text-decoration-line: none;
   -webkit-transition: color 0.2s; }
 
 .tags li {
@@ -587,8 +587,8 @@ table td {
   top: 0; }
 
 .tag:hover {
-  background-color: crimson;
+  background-color: #53be5e;
   color: white; }
 
 .tag:hover::after {
-  border-left-color: crimson; }
+  border-left-color: #53be5e; }
