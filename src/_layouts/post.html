@@ -3,10 +3,12 @@ layout: default
 ---
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
+{% include previous-next.html %}
   <header class="post-header">
     <!-- Tags for indivifual post-->
+    
 <span class="tags">
+  
   {% for tag in page.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
     <a class ="tag" href="/tag/{{ tag_name }}">{{ tag_name }}</a>
@@ -34,8 +36,6 @@ layout: default
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
-
-    {% include previous-next.html %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

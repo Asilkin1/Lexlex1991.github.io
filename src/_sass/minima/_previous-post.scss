@@ -2,27 +2,37 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 2rem;
-
+    padding-left:0px;
     font-size: $base-font-size;
 
+
     div {
-        width: 50%;
+        width: 100%;
+
+    }
+
+    i
+    {
+    float:left; 
+    padding:20px;
+    background-color:$brand-color;
+    border-radius:10px;
+    }
+
+    .side
+    {
+    background-color: #eef;
+    margin:10px;
 
     }
     div a
     {
      	padding: 10px;
- 		background-color:white;
  		overflow:hidden;
     }
    
 
-    .arrow {
-        &::before, &::after {
-            display:inline-block;
-            text-decoration: none;
-        }
-    }
+    
 
     .arrow__left {
         &::before {
@@ -34,7 +44,7 @@
     .arrow__right {
         &::after {
             content: "\2192";
-            padding-left: .3em;
+            padding-left: .5em;
         }
     }
 }
