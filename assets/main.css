@@ -528,7 +528,11 @@ table td {
   padding-bottom: 2rem;
   font-size: 16px; }
 .previous-next-post-links div {
-  width: 48%; }
+  width: 50%; }
+.previous-next-post-links div a {
+  padding: 10px;
+  background-color: white;
+  overflow: hidden; }
 .previous-next-post-links .arrow::before, .previous-next-post-links .arrow::after {
   display: inline-block;
   text-decoration: none; }
