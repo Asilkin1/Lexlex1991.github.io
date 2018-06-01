@@ -5,9 +5,11 @@ layout: default
 <h1>{{ page.tag }}</h1>
 <ul>
 {% for post in site.tags[page.tag] %}
-  <li style="list-style: none;padding:10px;margin:20px; border-left:solid green;" ><a style="font-size:20px;" href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+
+  <li style="list-style: none;padding:10px;margin:0px 0px 0px 20px; border-left:solid green;" ><a style="font-size:20px;" href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
     {{ post.description }}
   </li>
+  <div class="circle" style="border-radius:50%;border:solid green; width:20px; height:20px; margin:0px 0px 0px 9px;"></div>
 {% endfor %}
 </ul>
 </div>
