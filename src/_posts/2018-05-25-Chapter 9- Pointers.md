@@ -4,7 +4,7 @@ title: "Chapter 9 - Pointers"
 date: 2018-05-25 11:44:00
 categories: CIT237
 author: Alex Silkin
-tags: "#CIT237"
+tags: CIT237 C++ Pointers
 publish: true
 ---
 

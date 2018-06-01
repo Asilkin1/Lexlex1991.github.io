@@ -4,7 +4,7 @@ title: "Chapter 11 - Structured Data"
 date: 2018-05-28 11:44:00
 categories: CIT237
 author: Alex Silkin
-tags: "#CIT237"
+tags: CIT237
 ---
 
 - TOC
