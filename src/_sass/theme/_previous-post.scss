@@ -1,0 +1,50 @@
+.previous-next-post-links {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+    padding-left:0px;
+    font-size: $base-font-size;
+
+
+    div {
+        width: 100%;
+
+    }
+
+    i
+    {
+    float:left; 
+    padding:20px;
+    background-color:$brand-color;
+    border-radius:10px;
+    }
+
+    .side
+    {
+    background-color: #eef;
+    margin:10px;
+
+    }
+    div a
+    {
+     	padding: 10px;
+ 		overflow:hidden;
+    }
+   
+
+    
+
+    .arrow__left {
+        &::before {
+            content: "\2190";
+            padding-right: .3em;
+        }
+    }
+
+    .arrow__right {
+        &::after {
+            content: "\2192";
+            padding-left: .5em;
+        }
+    }
+}
