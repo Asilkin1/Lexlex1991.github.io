@@ -1,12 +1,12 @@
 /**
- * Reset some basic elements
+ * Reset in a very modern manner
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing:inherit;
 }
 
 
@@ -27,7 +27,8 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  padding:11px;
+  padding:0.7rem;
+  box-sizing:border-box;
 }
 
 

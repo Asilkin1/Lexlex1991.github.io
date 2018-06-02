@@ -1,11 +1,34 @@
 /**
  * Site header
  */
+
+ .header_title {
+  @include relative-font-size(1.625);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  color:rgb(220, 207, 69);
+
+  &,
+  &:visited {
+    color: $grey-color-dark;
+  }
+}
+
+.header_logo
+{
+  font-size:1.3em; 
+  color:rgba(255, 255, 255, 0.81)
+}
+
 .site-header {
   border-top: 0px solid $grey-color-dark;
   border-bottom: 5px solid $grey-color-light;
   background-color:white;
-  min-height: $spacing-unit * 13.865;
+  min-height: $spacing-unit * 12.865;
+
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -14,6 +37,8 @@
     rgba(89, 216, 125, 0.8),
     rgba(40,180,131,0.8)),
   url("../../assets/comp.jpg");
+  background-size:cover;
+  background-position:top;
   clip-path: polygon(0 0, 100% 0, 100% 340px, 0 100%);
 }
 
@@ -24,13 +49,14 @@
   
 }
 /* TEXT in the header==============================*/
-.text-box
+.header_text-box
 {
   position: absolute;
-  top:40%;
+  top:55%;
   left:50%;
   transform: translate(-50%,-50%);
   text-align:center;
+  vertical-align: middle;
 }
 
 /* =====================BUTTONS====================*/
@@ -38,16 +64,16 @@
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding:15px 40px;
+  padding:1rem 2rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   transition: all .2s;
   position: relative;
 }
 
 .btn:hover
 {
-  transform:translateY(-3px); 
+  transform:translateY(-0.18rem); 
   box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 
@@ -56,12 +82,12 @@
   transform: translateY(-1px);
 }
 
-.btn-white
+.btn--white
 {
   background-color: #fff;
   color:#777; 
 }
-.btn-white::after
+.btn--  white::after
 {
   background-color:white;
 }
@@ -85,30 +111,36 @@
   opacity: 0;
 }
 
+.btn--animated
+{
+ /* Create some button animation*/
+}
+
 /*========================This is site title in header block*/
-.header-primary-main
+.heading-primary
 {
   text-align: center;
-  margin-bottom:60px;
-  position: absolute;
-  left: 0;
-  right: 0;
+
   color:#fffC;
-  font-size:$base-font-size * 5;
+  text-transform:uppercase;
+}
+
+.heading-primary--main
+{
+  display: block;
+  font-size:4.8rem;
+  font-weight: 400;
 /*How long it take to animate*/
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
-
-.heading-primary-main
+.heading-primary--sub
 {
-  color:#fffC;
-  font-size:$base-font-size * 5;
-/*How long it take to animate*/
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+  display: block;
+  font-size:2rem;
+  font-weight: 700;
+  letter-spacing: 1.8rem;
 }
 
 /*This is an animation for title*/
@@ -129,27 +161,10 @@
 
 }
 
-
-
-.site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
-  line-height: $base-line-height * $base-font-size * 2.25;
-  letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
-  color:rgb(220, 207, 69);
-
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
-}
-
-.site-nav {
+.header_site-nav {
   z-index:101;
   float: right;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  line-height: $base-line-height * $base-font-size * 3.89;
 
   .nav-trigger {
       display: none;
@@ -162,9 +177,6 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-    border: solid;
-    border-radius:10px;
-    padding:10px;
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
@@ -203,12 +215,12 @@
       }
     }
 
-    input ~ .trigger {
+    input ~ .header_trigger {
       clear: both;
       display: none;
     }
 
-    input:checked ~ .trigger {
+    input:checked ~ .header_trigger {
       display: block;
       padding-bottom: 5px;
     }
