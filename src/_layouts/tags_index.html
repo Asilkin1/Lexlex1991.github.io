@@ -6,10 +6,10 @@ layout: default
 <ul>
 {% for post in site.tags[page.tag] %}
 
-  <li style="list-style: none;padding:10px;margin:0px 0px 0px 20px; border-left:solid green;" ><a style="font-size:20px;" href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+  <li style="list-style: none;padding:10px;margin:0px 0px 0px 20px;border-left:solid rgba(89, 216, 125, 0.8);" ><a style="font-size:20px;" href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
     {{ post.description }}
   </li>
-  <div class="circle" style="border-radius:50%;border:solid green; width:20px; height:20px; margin:0px 0px 0px 9px;"></div>
+  <div class="circle" style="border-radius:50%;border:solid rgba(89, 216, 125, 0.8); width:30px; height:30px; margin:0px 0px 0px 4px;"></div>
 {% endfor %}
 </ul>
 </div>

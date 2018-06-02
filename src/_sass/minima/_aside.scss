@@ -1,0 +1,24 @@
+aside
+{
+	position: fixed;
+    bottom:20px;
+    -webkit-animation: intro 0.3s both;
+    animation: intro 0.3s both;
+    background-color: white;
+    padding: 100px;
+    margin-top: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    float: right;
+    width: 20%;
+    border-left: $grey-color-light;
+}
+
+aside :hover
+{
+ 
+}
+
+.move-on-hover:hover
+{
+	
+}
