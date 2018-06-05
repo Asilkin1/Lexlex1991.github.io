@@ -5,8 +5,8 @@
 .header {
   border-top: 0px solid $grey-color-dark;
   border-bottom: 5px solid $grey-color-light;
-  background-color:white;
-  min-height: $spacing-unit * 12.865;
+  background-color:rgba(113, 209, 89, 0.842);
+  min-height: $spacing-unit * 15.865;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -14,10 +14,11 @@
     to right bottom, 
     rgba(89, 216, 125, 0.8),
     rgba(40,180, 131,0.8)),
-  url("../../assets/mess.jpg");
+  url("../../assets/collaborative.jpg");
   background-size:cover;
   background-position:top;
-  clip-path: polygon(0 0, 100% 0, 100% 340px, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  z-index: 101;
   
   // Header logo
   &_logo 
@@ -141,17 +142,19 @@
   display: block;
   font-size:4.8rem;
   font-weight: 400;
-/*How long it take to animate*/
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+
   }
 
   &--sub{
   display: block;
   font-size:2rem;
   font-weight: 700;
-  letter-spacing: 1.8rem;
+  // letter-spacing: 1.8rem;
+
+  /*How long it take to animate*/
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   }
 }
 
@@ -187,7 +190,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: white;
     line-height: $base-line-height;
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
@@ -195,14 +198,15 @@
     }
   }
 
+  // Header nav little square
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
+    top: 1.6rem;
     right: $spacing-unit / 2;
-    background-color: $background-color;
+    background-color:rgba(113, 209, 89, 0.52);
     border: 1px solid $grey-color-light;
     border-radius: 5px;
-    text-align: right;
+    text-align: center;
 
     label[for="nav-trigger"] {
       display: block;
@@ -223,7 +227,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: $grey-color-light-l;
       }
     }
 
@@ -249,7 +253,77 @@
   }
 }
 
+/*BEGIN of RESPONSIVE settings*/
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+// @media screen and (max-width: 800px) {
+//   .leftcolumn, .rightcolumn {   
+//       width: 100%;
+//       padding: 0;
+//   }
+// }
 
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+// @media screen and (max-width: 400px) {
+//   .top a {
+//       float: none;
+//       width: 100%;
+//   }
+// }
+
+// @media (min-width: 43.75rem) {
+// body {
+//   font-size: 1rem;
+//   /* equivalent to 16px */
+//   line-height: 1.375;
+//   /* equivalent to 22px */
+// }
+//   h1 {
+//   font-size: 2.5rem;
+//   /* 2.5x body copy size = 40px */
+//   line-height: 1.125;
+// }
+//    h2 {
+//   font-size: 2rem;
+//   /* 2x body copy size = 32px */
+//   line-height: 1.25;
+// }
+//    h3 {
+//   font-size: 1.5rem;
+//   /* 1.5x body copy size = 24px */
+//   line-height: 1.25;
+// }
+//   h4 {
+//   line-height: 1.22222222;
+//   /* (22px / 18px */
+// }
+//   blockquote {
+//   font-size: 1.5rem;
+//   /* 24px / 16px = */
+//   line-height: 1.45833333;
+//   /* 35px / 24px */
+// }
+// }
+
+// @media (min-width: 56.25rem) {
+// h1 {
+//   font-size: 3rem;
+//   /* 3x body copy size = 48px */
+//   line-height: 1.05;
+//   /* keep to a multiple of the 20px line height 
+//   and something more appropriate for display headings */
+// }
+//   h2 {
+//   font-size: 2.25rem;
+//   /* 2.25x body copy size = 36px */
+//   line-height: 1.25;
+// }
+//   h3 {
+//   font-size: 1.75rem;
+//   /* 1.75x body copy size = 28px */
+//   line-height: 1.25;
+// }
+// }
+// /*END of RESPONSIVE settings*/
 
 /**
  * Site footer
@@ -414,3 +488,5 @@
     }
   }
 }
+
+

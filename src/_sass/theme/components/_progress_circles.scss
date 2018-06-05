@@ -1,0 +1,21 @@
+.progress-list
+{
+    list-style: none;
+    padding:10px;
+    margin:0px 0px 0px 20px;
+    border-left:solid rgba(89, 216, 125, 0.8);
+
+    &_a
+    {
+        font-size:20px;
+    }
+}
+
+.circle
+{
+    border-radius:50%;
+    border:solid rgba(89, 216, 125, 0.8); 
+    width:30px; 
+    height:30px; 
+    margin:0px 0px 0px 7px;
+}

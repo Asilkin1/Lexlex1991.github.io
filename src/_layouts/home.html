@@ -1,16 +1,56 @@
 --- 
-layout: default
+layout: default 
 title: Study Journal 
 ---
 
 <div class="home">
 
+  
+
+<!--About section -->
+<main>
+    <section class="section-about">
+      <div class="u-center-text u-margin-bottom-big">
+        <h2 class="heading-secondary">
+          About the website
+        </h2>
+      </div>
+      <div class="wrapper">
+      <div class="row">
+          <div class="col-1"> 
+            <h3 class="heading-tertiary u-margin-bottom-small">Languages</h3>
+            <i class="fab fa-html5 fa-2x"> html</i> 
+            <i class="fab fa-css3-alt fa-2x"> css</i>
+            <i class="fab fa-sass fa-2x"> sass</i>
+
+            <p class="paragraph">Some meaningful text out here</p>
+            
+            <h3 class="heading-tertiary">To learn:</h3>
+            <p class="paragraph">- C++ <br> - Java <br></p>
+          </div>
+
+          <div class="col-1">
+            <h3 class="heading-tertiary u-margin-bottom-small">Projects</h3>
+            <p class="paragraph">Some meaningful text out here</p>
+            <h3 class="heading-tertiary">Platforms</h3>
+            <p class="paragraph">Some meaningful text out here</p>
+          </div>
+          
+      </div>
+      </div>
+    </section>
+  </main>
+  <div class="wrapper">
   {%- if page.title -%}
+  
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%} {{ content }} {%- if site.posts.size > 0 -%}
 
   <h2 class="post-list-heading">{{ page.list_title | default: "" }}</h2>
   <ul class="post-list">
+    <div class="u-center-text u-margin-bottom-small">
+    <h2 class="heading-secondary">Articles</h2>
+    </div>
     {%- for post in site.posts -%}
     <li style="background-color: white;
         padding: 20px;
@@ -35,6 +75,6 @@ title: Study Journal
 
 
   {%- endif -%}
-
+</div>
 
 </div>

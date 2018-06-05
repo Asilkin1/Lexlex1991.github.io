@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<div class="wrapper">
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 {% include previous-next.html %}
   <header class="post-header">
@@ -30,8 +31,9 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
     
-
+    {% include back_to_top.html %}
   </div>
+  
    
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
@@ -39,10 +41,7 @@ layout: default
 
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-  <div style="float:right;">
-    <div class="expand" style="background-color:black">
-    {% include aside.html %}
-  </div>
-  </div>
+  
 </article>
 
+</div>

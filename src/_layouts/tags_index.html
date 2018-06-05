@@ -1,15 +1,21 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="wrapper post">
 <h1>{{ page.tag }}</h1>
 <ul>
 {% for post in site.tags[page.tag] %}
 
-  <li style="list-style: none;padding:10px;margin:0px 0px 0px 20px;border-left:solid rgba(89, 216, 125, 0.8);" ><a style="font-size:20px;" href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
+  <li class="progress-list">
+    <a class="progress-list_a" href="{{ post.url }}">
+      <span>{{ post.title }}</span>
+    </a> ({{ post.date | date_to_string }})<br>
     {{ post.description }}
   </li>
-  <div class="circle" style="border-radius:50%;border:solid rgba(89, 216, 125, 0.8); width:30px; height:30px; margin:0px 0px 0px 4px;"></div>
+
+  <div class="circle">
+    <!--Progress circle -->
+  </div>
 {% endfor %}
 </ul>
 </div>

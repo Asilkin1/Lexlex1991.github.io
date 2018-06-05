@@ -15,3 +15,30 @@
     }
   
   }
+
+  // Floating circle pusle behavior
+  @keyframes pulsCircle
+{
+     0%{
+        opacity: 0;
+        color:rgba(0, 128, 0, 0.043);
+        box-shadow: rgba(131, 125, 125, 0.452) 0px 1px 2px 3px;
+      }
+
+     10%{
+        opacity: 10;
+        color:rgba(0, 128, 0, 0.242);
+        
+     }
+      20%{
+        opacity:20%
+      }
+
+      30%{
+          opacity: 30%;
+      }
+    
+      100%{
+        opacity: 1;
+      }
+}

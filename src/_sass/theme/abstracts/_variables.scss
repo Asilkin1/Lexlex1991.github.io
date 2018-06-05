@@ -1,4 +1,5 @@
 
+// Colors
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   100% !default;
 $base-font-weight: 400 !default;
@@ -11,6 +12,8 @@ $background-color: white !default;
 $brand-color:      #2f948f !default;
 
 $grey-color:       #133216 !default;
+$grey-color-light-l: #f7f7f7;
+$grey-color-light-d: #777;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
@@ -18,6 +21,10 @@ $table-text-align: left !default;
 
 // Width of the content area
 $content-width:    800px !default;
-
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
+
+// Grid
+$grid-width:114rem;
+$gutter-vertical:8rem;
+$gutter-horizontal:6rem;

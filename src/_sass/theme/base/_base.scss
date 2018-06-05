@@ -27,7 +27,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  padding:0.7rem;
+  padding:1rem;
   box-sizing:border-box;
 }
 
@@ -136,12 +136,11 @@ blockquote {
     -webkit-font-smoothing: subpixel-antialiased;
     /*-webkit-text-stroke: 0.45px;
     // or*/
-    -webkit-text-stroke: 0.45px rgba(38, 52, 74, 0.97);
-    border-left: 3.5px solid $grey-color-light;
+    border-left: 0.4rem solid $grey-color-light;
     margin-left: -1em;
-    padding: 0.2em 1em;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 0.5em 1em;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 
@@ -152,14 +151,14 @@ blockquote {
  */
  pre,
 code {
-  @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
+  @include relative-font-size(1.1);
+  border: 0.1rem solid $grey-color-light;
+  border-radius: 0.2rem;
   
 }
 
 code {
-  padding: 1px 5px;
+  padding: 0.1rem 0.5rem;
   
 }
 
@@ -172,6 +171,7 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+    // font-size:0.4rem;
   }
 }
 
