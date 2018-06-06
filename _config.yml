@@ -33,6 +33,7 @@ google_analytics_id: UA-119838222-1
 
 #port
 port: 4444
+environment: production
 
 # Build settings
 markdown: kramdown
@@ -44,6 +45,8 @@ sass:
 # Custom
 show_excerpts: true
 timezone: America/Boston
+
+JEKYLL_ENV: production
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
