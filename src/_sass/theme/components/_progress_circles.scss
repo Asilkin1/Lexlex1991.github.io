@@ -2,12 +2,18 @@
 {
     list-style: none;
     padding:10px;
-    margin:0px 0px 0px 20px;
+    margin:0px 0px 0px 2px;
     border-left:solid rgba(89, 216, 125, 0.8);
+    text-align: center;    
 
     &_a
     {
         font-size:20px;
+    }
+
+    &::before
+    {
+        color:black;
     }
 }
 
@@ -17,5 +23,10 @@
     border:solid rgba(89, 216, 125, 0.8); 
     width:30px; 
     height:30px; 
-    margin:0px 0px 0px 7px;
+    margin:0px 0px 0px -0.9rem;
+
+    &::before
+    {
+        border:solid 5px;
+    }
 }
