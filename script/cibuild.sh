@@ -18,7 +18,7 @@ mkdir _site
 git clone https://${TRAVIS_TRAVELING}@github.com/Lexlex1991/Lexlex1991.github.io.git --branch master _site
 
 # build with Jekyll into "_site"
-bundle exec jekyll build
+bundle exec JEKYLL_ENV=production jekyll build
 
 # push
 cd _site
