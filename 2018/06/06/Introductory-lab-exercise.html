@@ -68,7 +68,7 @@ ga('send', 'pageview');
         </span>
         
         <span class="heading-primary--sub">
-            Chapter 10 - Characters and Strings
+            Introductory Lab Exercise
           </span>
       </h1>
       <a href="https://bhcconline.mrooms.net/" class="btn btn--white btn--animated">course</a>
@@ -86,9 +86,9 @@ ga('send', 'pageview');
 <div class="previous-next-post-links">
     <div>
         
-            <a href="/cit237/2018/05/25/Chapter-9-Pointers.html">
+            <a href="/cit237/2018/05/28/Chapter-12-Advanced-File-Operations.html">
                 <i class="fas fa-chevron-left fa-5x">
-               <!--  Chapter 9 - Pointers -->
+               <!--  Chapter 12 - Advanced File Operations -->
                 </i>
             </a>
         
@@ -96,11 +96,6 @@ ga('send', 'pageview');
     
 
     <div>
-        
-            <a href="/cit237/2018/05/28/Chapter-11-Structured-Data.html">
-                <i class="fas fa-chevron-right fa-5x" style="float:right;">
-            </i>
-        </a>
         
     </div>
 </div>
@@ -112,41 +107,57 @@ ga('send', 'pageview');
   
   
     
-    <a class ="tag" href="/tag/CIT237">CIT237</a>
+    <a class ="tag" href="/tag/notes">notes</a>
   
-</span>    <h1 class="post-title p-name" itemprop="name headline">Chapter 10 - Characters and Strings</h1>
+</span>    <h1 class="post-title p-name" itemprop="name headline">Introductory Lab Exercise</h1>
     <p class="post-meta">
       
-      <time class="dt-published" datetime="2018-05-28T11:44:00+00:00" itemprop="datePublished">May 28, 2018
+      <time class="dt-published" datetime="2018-06-06T00:00:00+00:00" itemprop="datePublished">Jun 6, 2018
       </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Alex Silkin</span></span></p>
 
   </header>
 
 
   <div class="post-content e-content" itemprop="articleBody">
-    <ul id="markdown-toc">
-  <li><a href="#characters-testing" id="markdown-toc-characters-testing">Characters testing</a></li>
-  <li><a href="#characters-case-conversion" id="markdown-toc-characters-case-conversion">Characters case conversion</a></li>
-  <li><a href="#c-strings" id="markdown-toc-c-strings">C-Strings</a></li>
-  <li><a href="#library-functions-for-c-strings" id="markdown-toc-library-functions-for-c-strings">Library functions for C-Strings</a></li>
-  <li><a href="#numeric-conversion-functions" id="markdown-toc-numeric-conversion-functions">Numeric conversion functions</a></li>
-  <li><a href="#focus-on-software-engineering" id="markdown-toc-focus-on-software-engineering">Focus on software engineering</a></li>
-  <li><a href="#c-string-class" id="markdown-toc-c-string-class">C++ string class</a></li>
-</ul>
+    <p>Just a reminder of how to use Visual Studio.</p>
 
-<h3 id="characters-testing">Characters testing</h3>
-<h3 id="characters-case-conversion">Characters case conversion</h3>
-<h3 id="c-strings">C-Strings</h3>
-<h3 id="library-functions-for-c-strings">Library functions for C-Strings</h3>
-<h3 id="numeric-conversion-functions">Numeric conversion functions</h3>
-<h3 id="focus-on-software-engineering">Focus on software engineering</h3>
-<h3 id="c-string-class">C++ string class</h3>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
+    Enhancement 1: Prevent Overdrafts on the Bank Account
+*/</span> 
+
+<span class="k">if</span> <span class="p">(</span><span class="n">amount</span> <span class="o">&gt;</span> <span class="n">balance</span><span class="p">)</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Not enough money"</span><span class="p">;</span>
+<span class="k">else</span><span class="o">:</span>
+    <span class="n">balance</span> <span class="o">-=</span> <span class="n">amount</span><span class="p">;</span>
+
+<span class="cm">/* 
+    Enhancement 2: Set Annual Interest Percentage 
+*/</span> 
+
+<span class="n">monthlyInterestRate</span> <span class="o">=</span> <span class="n">annualInterestRate</span> <span class="o">/</span> <span class="n">MONTHS_PER_YEAR</span><span class="p">;</span>
+<span class="n">monthlyInterestCoefficient</span> <span class="o">=</span> <span class="n">monthlyInterestRate</span> <span class="o">/</span> <span class="mi">100</span><span class="p">;</span>
+
+<span class="cm">/*
+    Enhancement 3: 
+    - Calculate Interest for One Month 
+    - Add to Balance
+*/</span> 
+
+<span class="n">interestThisMonth</span> <span class="o">=</span> <span class="n">balance</span> <span class="o">*</span> <span class="n">monthlyInterestCoefficient</span><span class="p">;</span>
+
+<span class="cm">/* 
+    Enhancement 4: Format the Output
+    Print float numbers to monitor like $100.00
+*/</span> 
+
+<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">fixed</span> <span class="o">&lt;&lt;</span> <span class="n">setprecision</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre></div></div>
 
     
     <div class="back-to-top">
    <a href="#top"><i class="fas fa-arrow-alt-circle-up fa-3x"></i></a>
 </div> 
-  </div><a class="u-url" href="/cit237/2018/05/28/Chapter-10-Characters-and-More-About-the-string-Class.html" hidden></a>
+  </div><a class="u-url" href="/2018/06/06/Introductory-lab-exercise.html" hidden></a>
   
 </article>
 
