@@ -1,5 +1,5 @@
 ---
 layout: tags_index
 tag: notes
-title:  Notes
+title: Notes
 ---
