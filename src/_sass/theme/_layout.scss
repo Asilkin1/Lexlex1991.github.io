@@ -16,6 +16,7 @@
   url("../../assets/computer.jpg");
   background-size:cover;
   background-position:top;
+  background-attachment: fixed;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   z-index: 101;
   
@@ -330,6 +331,7 @@
 .site-footer {
   border-top: 5px solid $grey-color-light;
   padding: $spacing-unit 0;
+  background-color: $grey-color-light-l;
 }
 
 .footer-heading {

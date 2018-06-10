@@ -3,30 +3,63 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <!--First column -->
+      <div class="footer-col footer-col-2">
         <ul class="contact-list">
-          <li class="p-name">
+          <!-- <li class="p-name">
             {%- if site.author -%}
               {{ site.author | escape }}
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
+            </li> -->
+            <li><h3>References:</h3>
             </li>
+          <li>
+            <a href="http://www.cplusplus.com/reference/" target="_blank">C++ Reference</a>
+          </li>
+          <!-- <li>
+            <a href="#">Variables</a>
+          </li>
+          <li>
+            <a href="#">ASCII</a>
+          </li> -->
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <!-- <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
             {%- endif -%}
         </ul>
       </div>
-
+    
+       <!--Second column-->
       <div class="footer-col footer-col-2">
-        {%- include social.html -%}
+        <ul class="contact-list">
+          <li>
+            <h3>BHCC:</h3>
+          </li>
+          <li>
+            <a href="https://webmail.bhcc.edu" target="_blank">E-mail access</a>
+          </li>
+          <li>
+            <a href="http://www.bhcc.mass.edu/" target="_blank">BHCC Home page</a>
+          </li>
+          <li>
+            <a href="http://www.bhcc.mass.edu/portal" target="_blank">BHCC Online</a>
+          </li>
+          <li>
+            <a href="https://bhcconline.mrooms.net/login/index.php" target="_blank">BHCC Moodle Login</a>
+          </li>
+        </ul>
+        
       </div>
-
+       <!--Third column -->
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+        <!-- <p>{{- site.description | escape -}}</p> -->
+        <h3>Contact:</h3>
+        {%- include social.html -%}
+        
       </div>
     </div>
 
