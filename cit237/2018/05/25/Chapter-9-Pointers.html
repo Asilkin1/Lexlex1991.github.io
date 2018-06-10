@@ -7,7 +7,24 @@
   
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  
+  <script src="/assets/main.js"></script>
+  <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Chapter 9 - Pointers | Study Journal</title>
+<meta name="generator" content="Jekyll v3.8.2" />
+<meta property="og:title" content="Chapter 9 - Pointers" />
+<meta name="author" content="Alex Silkin" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This website is presenting projects and apps created while taking a formal training in Computer Science and programming. Here I will store projects and labs done in programming courses as well as some of the materials required according to curriculum." />
+<meta property="og:description" content="This website is presenting projects and apps created while taking a formal training in Computer Science and programming. Here I will store projects and labs done in programming courses as well as some of the materials required according to curriculum." />
+<link rel="canonical" href="asilkin.com/cit237/2018/05/25/Chapter-9-Pointers.html" />
+<meta property="og:url" content="asilkin.com/cit237/2018/05/25/Chapter-9-Pointers.html" />
+<meta property="og:site_name" content="Study Journal" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-05-25T11:44:00+00:00" />
+<script type="application/ld+json">
+{"description":"This website is presenting projects and apps created while taking a formal training in Computer Science and programming. Here I will store projects and labs done in programming courses as well as some of the materials required according to curriculum.","author":{"@type":"Person","name":"Alex Silkin"},"@type":"BlogPosting","url":"asilkin.com/cit237/2018/05/25/Chapter-9-Pointers.html","headline":"Chapter 9 - Pointers","dateModified":"2018-05-25T11:44:00+00:00","datePublished":"2018-05-25T11:44:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"asilkin.com/cit237/2018/05/25/Chapter-9-Pointers.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
   
   
 
@@ -33,7 +50,9 @@ ga('send', 'pageview');
     
   
 </head>
-<body><header class="header" role="banner">
+<body>
+<header class="header" role="banner">
+
 
   <div class="wrapper"><!--This logo on the top left -->
     <a class="header_title" rel="author" href=" / ">
@@ -42,10 +61,10 @@ ga('send', 'pageview');
       </div>
     </a>
 
-    <!--LINKS in NAV bar --><nav class="header_site-nav">
+    <!--LINKS in NAV bar --><nav class="header_site-nav" onClick="openNav()">
       <a name="top"></a>
       <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-      <label for="nav-trigger">
+      <label for="nav-trigger" >
         <span class="menu-icon">
           <svg viewBox="0 0 18 15" width="18px" height="15px">
             <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"
@@ -54,8 +73,10 @@ ga('send', 'pageview');
         </span>
       </label>
 
-      <!--LINKS in burger nenu -->
-      <div class="header_trigger"><a class="page-link" href="/tag/CIT237.html">CIT237</a><a class="page-link" href="/tag/notes.html">Notes</a></div>
+
+
+      <!--LINKS in burger menu -->
+      <div class="header_trigger" ><a class="page-link" href="/tag/CIT237.html" >CIT237</a><a class="page-link" href="/tag/notes.html" >Notes</a></div>
     </nav></div>
 
   <div>
@@ -76,7 +97,8 @@ ga('send', 'pageview');
         <a href="#" class="btn btn--white btn--animated">Portfolio</a>
       </nav> -->
     </div>
-</header><main class="page-content" aria-label="Content">
+</header>
+<main class="page-content" aria-label="Content">
 
     <!-- <div class="wrapper"> -->
 
@@ -386,20 +408,52 @@ Allowed operations:</p>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Study Journal</h2>
+    <!-- <h2 class="footer-heading">Study Journal</h2> -->
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <!--First column -->
+      <div class="footer-col footer-col-2">
         <ul class="contact-list">
-          <li class="p-name">Study Journal</li><li><a class="u-email" href="mailto:avsilkin@bhcc.edu">avsilkin@bhcc.edu</a></li></ul>
+          <!-- <li class="p-name">Study Journal</li> -->
+            <li><h3>References:</h3>
+            </li>
+          <li>
+            <a href="http://www.cplusplus.com/reference/" target="_blank">C++ Reference</a>
+          </li>
+          <!-- <li>
+            <a href="#">Variables</a>
+          </li>
+          <li>
+            <a href="#">ASCII</a>
+          </li> --><!-- <li><a class="u-email" href="mailto:avsilkin@bhcc.edu">avsilkin@bhcc.edu</a></li> --></ul>
       </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list" ><li ><a href="https://github.com/Lexlex1991"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Lexlex1991</span></a></li><li><a href="https://www.twitter.com/mrmajestickk"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">mrmajestickk</span></a></li></ul>
-</div>
-
+    
+       <!--Second column-->
+      <div class="footer-col footer-col-2">
+        <ul class="contact-list">
+          <li>
+            <h3>BHCC:</h3>
+          </li>
+          <li>
+            <a href="https://webmail.bhcc.edu" target="_blank">E-mail access</a>
+          </li>
+          <li>
+            <a href="http://www.bhcc.mass.edu/" target="_blank">BHCC Home page</a>
+          </li>
+          <li>
+            <a href="http://www.bhcc.mass.edu/portal" target="_blank">BHCC Online</a>
+          </li>
+          <li>
+            <a href="https://bhcconline.mrooms.net/login/index.php" target="_blank">BHCC Moodle Login</a>
+          </li>
+        </ul>
+        
+      </div>
+       <!--Third column -->
       <div class="footer-col footer-col-3">
-        <p>This website is presenting projects and apps created while taking a formal training in Computer Science and programming. Here I will store projects and labs done in programming courses as well as some of the materials required according to curriculum.</p>
-      </div>
+        <!-- <p>This website is presenting projects and apps created while taking a formal training in Computer Science and programming. Here I will store projects and labs done in programming courses as well as some of the materials required according to curriculum.</p> -->
+        <h3>Contact:</h3><ul class="social-media-list" ><li ><a href="https://github.com/Lexlex1991"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">Lexlex1991</span></a></li><li><a href="https://www.twitter.com/mrmajestickk"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">mrmajestickk</span></a></li></ul>
+</div>
     </div>
 
   </div>
