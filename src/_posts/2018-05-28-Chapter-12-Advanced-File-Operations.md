@@ -2,9 +2,9 @@
 layout: post
 title: "Chapter 12 - Advanced File Operations"
 date: 2018-05-28 11:44:00
-categories: CIT237
+categories: C++
 author: Alex Silkin
-tags: CIT237
+tags: C++
 ---
 
 - TOC
