@@ -17,9 +17,9 @@
      });
   </script>
   <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Java lists | Study Journal</title>
+<title>Java Lists, Stacks,Queues,Priority Queues | Study Journal</title>
 <meta name="generator" content="Jekyll v3.8.2" />
-<meta property="og:title" content="Java lists" />
+<meta property="og:title" content="Java Lists, Stacks,Queues,Priority Queues" />
 <meta name="author" content="Alex Silkin" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This website is presenting projects and apps created while taking a formal training in Computer Science and programming. Here I will store projects and labs done in programming courses as well as some of the materials required according to curriculum." />
@@ -30,7 +30,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-02-07T08:51:00+00:00" />
 <script type="application/ld+json">
-{"description":"This website is presenting projects and apps created while taking a formal training in Computer Science and programming. Here I will store projects and labs done in programming courses as well as some of the materials required according to curriculum.","author":{"@type":"Person","name":"Alex Silkin"},"@type":"BlogPosting","url":"asilkin.com/java/2019/02/07/Java-lists.html","headline":"Java lists","dateModified":"2019-02-07T08:51:00+00:00","datePublished":"2019-02-07T08:51:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"asilkin.com/java/2019/02/07/Java-lists.html"},"@context":"http://schema.org"}</script>
+{"description":"This website is presenting projects and apps created while taking a formal training in Computer Science and programming. Here I will store projects and labs done in programming courses as well as some of the materials required according to curriculum.","author":{"@type":"Person","name":"Alex Silkin"},"@type":"BlogPosting","url":"asilkin.com/java/2019/02/07/Java-lists.html","headline":"Java Lists, Stacks,Queues,Priority Queues","dateModified":"2019-02-07T08:51:00+00:00","datePublished":"2019-02-07T08:51:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"asilkin.com/java/2019/02/07/Java-lists.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -97,7 +97,7 @@ ga('send', 'pageview');
         </span>
         
         <span class="heading-primary--sub">
-            Java lists
+            Java Lists, Stacks,Queues,Priority Queues
           </span>
       </h1>
       <a href="https://bhcconline.mrooms.net/" class="btn btn--white btn--animated">course</a>
@@ -139,7 +139,7 @@ ga('send', 'pageview');
     
     <a class ="tag" href="/tag/JAVA">JAVA</a>
   
-</span>    <h1 class="post-title p-name" itemprop="name headline">Java lists</h1>
+</span>    <h1 class="post-title p-name" itemprop="name headline">Java Lists, Stacks,Queues,Priority Queues</h1>
     <p class="post-meta">
       
       <time class="dt-published" datetime="2019-02-07T08:51:00+00:00" itemprop="datePublished">Feb 7, 2019
@@ -150,255 +150,36 @@ ga('send', 'pageview');
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="markdown-toc">
-  <li><a href="#getting-the-address-of-a-variable" id="markdown-toc-getting-the-address-of-a-variable"><strong>Getting the Address of a Variable</strong></a></li>
-  <li><a href="#pointer-variables" id="markdown-toc-pointer-variables"><strong>Pointer Variables</strong></a>    <ul>
-      <li><a href="#indirection-operator" id="markdown-toc-indirection-operator"><em>Indirection operator</em></a></li>
-      <li><a href="#declaration" id="markdown-toc-declaration"><em>Declaration</em></a></li>
-      <li><a href="#definition" id="markdown-toc-definition"><em>Definition</em></a></li>
-      <li><a href="#creating-a-pointer" id="markdown-toc-creating-a-pointer"><em>Creating a pointer</em></a></li>
-      <li><a href="#using-a-pointer" id="markdown-toc-using-a-pointer"><em>Using a pointer</em></a></li>
+  <li><a href="#java-collections-framework" id="markdown-toc-java-collections-framework"><strong>Java Collections Framework</strong></a></li>
+  <li><a href="#list-interface" id="markdown-toc-list-interface"><strong>List interface</strong></a>    <ul>
+      <li><a href="#characteristics" id="markdown-toc-characteristics"><em>Characteristics:</em></a></li>
+      <li><a href="#supports-iterator" id="markdown-toc-supports-iterator"><em>Supports iterator</em></a></li>
     </ul>
   </li>
-  <li><a href="#the-relationship-between-arrays-and-pointers" id="markdown-toc-the-relationship-between-arrays-and-pointers"><strong>The Relationship Between Arrays and Pointers</strong></a>    <ul>
-      <li><a href="#dereference-array-name" id="markdown-toc-dereference-array-name"><em>Dereference array name</em></a></li>
-      <li><a href="#processing-an-array-with-pointers" id="markdown-toc-processing-an-array-with-pointers"><em>Processing an array with pointers</em></a></li>
-    </ul>
-  </li>
-  <li><a href="#pointer-arithmetic" id="markdown-toc-pointer-arithmetic"><strong>Pointer Arithmetic</strong></a></li>
-  <li><a href="#initializing-pointers" id="markdown-toc-initializing-pointers"><strong>Initializing Pointers</strong></a></li>
-  <li><a href="#comparing-pointers" id="markdown-toc-comparing-pointers"><strong>Comparing Pointers</strong></a>    <ul>
-      <li><a href="#comparing-address" id="markdown-toc-comparing-address"><em>Comparing address</em></a></li>
-      <li><a href="#comparing-values" id="markdown-toc-comparing-values"><em>Comparing values</em></a></li>
-    </ul>
-  </li>
-  <li><a href="#pointers-as-function-parameters" id="markdown-toc-pointers-as-function-parameters"><strong>Pointers as Function Parameters</strong></a></li>
-  <li><a href="#focus-on-software-engineering-dynamic-memory-allocation" id="markdown-toc-focus-on-software-engineering-dynamic-memory-allocation"><strong>Focus on Software Engineering: Dynamic Memory Allocation</strong></a></li>
-  <li><a href="#focus-on-software-engineering-returning-pointers-from-functions" id="markdown-toc-focus-on-software-engineering-returning-pointers-from-functions"><strong>Focus on Software Engineering: Returning Pointers from Functions</strong></a></li>
-  <li><a href="#using-smart-pointers-to-avoid-memory-leaks" id="markdown-toc-using-smart-pointers-to-avoid-memory-leaks"><strong>Using Smart Pointers to Avoid Memory Leaks</strong></a></li>
-  <li><a href="#focus-on-problem-solving-and-program-design-a-case-study" id="markdown-toc-focus-on-problem-solving-and-program-design-a-case-study"><strong>Focus on Problem Solving and Program Design: A Case Study</strong></a></li>
 </ul>
 
-<h3 id="getting-the-address-of-a-variable"><strong>Getting the Address of a Variable</strong></h3>
+<h3 id="java-collections-framework"><strong>Java Collections Framework</strong></h3>
 <blockquote>
-  <p>Address operator &amp; return the memory address of a variable</p>
-</blockquote>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// get an address of a variable</span>
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">&amp;</span><span class="n">ourVariable</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h3 id="pointer-variables"><strong>Pointer Variables</strong></h3>
-
-<h4 id="indirection-operator"><em>Indirection operator</em></h4>
-<p>This is how indirection operator looks like <code class="highlighter-rouge">*</code></p>
-
-<h4 id="declaration"><em>Declaration</em></h4>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// A pointer which pointing to a variable of type int</span>
-<span class="kt">int</span> <span class="o">*</span><span class="n">pointerTo</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="c1">// OR in one line</span>
-<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
-<span class="c1">// Store address of x in the pointer;</span>
-<span class="n">pointerTo</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h4 id="definition"><em>Definition</em></h4>
-<blockquote>
-  <p>NOTE: A pointer is a variable that holds a memory address where a value lives.
-A pointer is declared using the <code class="highlighter-rouge">*</code> operator before an identifier.
-As C++ is a statically typed language, the type is required to declare a pointer. This is the type of data that will live at the memory address it points to.
- Pointers are designed to hold memory addresses. Pointers allow to indirectly manipulate 
-data stored in other variables.</p>
-</blockquote>
-
-<p>In the following example a reference variable passed as a parameter of the function is acting like a pointer.</p>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">num</span><span class="p">;</span>
-<span class="n">getNum</span><span class="p">(</span><span class="n">num</span><span class="p">);</span>
-
-<span class="c1">// Definition</span>
-<span class="kt">void</span> <span class="nf">getNum</span><span class="p">(</span><span class="kt">int</span> <span class="o">&amp;</span><span class="n">num</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"What is the number?"</span><span class="p">;</span>
-<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">num</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p>In this example the num parameter is a reference variable, and it receives the <em>address</em> of the num variable.</p>
-
-<p>Reference variables are easier to work with, but pointers are necessary for some operations like dynamic memory allocation(When the program will work with an unknonw amount of data).</p>
-
-<h4 id="creating-a-pointer"><em>Creating a pointer</em></h4>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="o">*</span><span class="n">pointer</span><span class="p">;</span>
-</code></pre></div></div>
-
-<p>Means that the pointer can hold a memory address of the variable of type integer.</p>
-
-<h4 id="using-a-pointer"><em>Using a pointer</em></h4>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> 
-<span class="p">{</span>
-<span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">13</span><span class="p">;</span>
-<span class="kt">int</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span>
-
-<span class="c1">// Refer to the address of the num</span>
-<span class="n">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">num</span><span class="p">;</span> 
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"The value of num is "</span> <span class="o">&lt;&lt;</span> <span class="n">num</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"The address of the num is "</span> <span class="o">&lt;&lt;</span> <span class="n">pointer</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="the-relationship-between-arrays-and-pointers"><strong>The Relationship Between Arrays and Pointers</strong></h3>
-<p>Concept:</p>
-<blockquote>
-  <p>NOTE: Array names can be used as a constant pointers. Pointers can be used as array names</p>
-</blockquote>
-
-<h4 id="dereference-array-name"><em>Dereference array name</em></h4>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">int</span> <span class="n">numArray</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span>
-    
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"The first element of the array is "</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">numArray</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p>Will print element with an index 0 which is 1</p>
-
-<h4 id="processing-an-array-with-pointers"><em>Processing an array with pointers</em></h4>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="c1">// Size of our array</span>
-    <span class="k">const</span> <span class="kt">int</span> <span class="n">SIZE</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">count</span><span class="p">,</span><span class="n">num</span><span class="p">[</span><span class="n">SIZE</span><span class="p">];</span>
-    
-    <span class="c1">// Get values from the array</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Provide"</span> <span class="o">&lt;&lt;</span> <span class="n">SIZE</span> <span class="o">&lt;&lt;</span> <span class="s">" numbers: "</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="n">SIZE</span><span class="p">;</span> <span class="n">count</span><span class="o">++</span><span class="p">)</span>
-        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="o">*</span><span class="p">(</span><span class="n">numbers</span> <span class="o">+</span> <span class="n">count</span><span class="p">);</span>
-        
-    <span class="c1">// Print values</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Numbers from the array: "</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="n">SIZE</span><span class="p">;</span> <span class="n">count</span><span class="o">++</span><span class="p">)</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="p">(</span><span class="n">numbers</span> <span class="o">+</span> <span class="n">count</span><span class="p">)</span><span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="pointer-arithmetic"><strong>Pointer Arithmetic</strong></h3>
-
-<blockquote>
-  <p>NOTE: Not all arithmetic operations might be applied to pointers
-Allowed operations:</p>
+  <p>A Collection is a container object that
+contains a group of elements.
+Java supports three types of collections:</p>
   <ul>
-    <li><code class="highlighter-rouge">++</code> and <code class="highlighter-rouge">--</code> to increment or decrement a pointer variable;</li>
-    <li><code class="highlighter-rouge">+</code> or <code class="highlighter-rouge">-</code> to add or substract an integer from the pointer;</li>
-    <li>pointer can be substracted from another pointer;</li>
+    <li>List</li>
+    <li>Set</li>
+    <li>Map</li>
   </ul>
 </blockquote>
 
-<table>
-  <tbody>
-    <tr>
-      <td>R1</td>
-      <td>C1</td>
-      <td>C2</td>
-      <td>C3</td>
-    </tr>
-    <tr>
-      <td>sd</td>
-      <td>dd</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>sd</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>sd</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+<h3 id="list-interface"><strong>List interface</strong></h3>
 
-<p>A content of pointer variable can be changed with math satements such as addition <code class="highlighter-rouge">+</code> and substraction <code class="highlighter-rouge">-</code>.</p>
+<h4 id="characteristics"><em>Characteristics:</em></h4>
+<ul>
+  <li>Stores elements in a sequential order.</li>
+  <li>Allows to specify where the element is stored.</li>
+  <li>Elements can be accessed by index.</li>
+</ul>
 
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">const</span> <span class="kt">int</span> <span class="n">SIZE</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">set</span><span class="p">[</span><span class="n">SIZE</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">40</span><span class="p">};</span>
-<span class="kt">int</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">=</span> <span class="nb">nullptr</span><span class="p">;</span> <span class="c1">// Pointer</span>
-<span class="kt">int</span> <span class="n">count</span><span class="p">;</span> <span class="c1">// Counter for for loop</span>
-
-<span class="n">pointer</span> <span class="o">=</span> <span class="n">set</span><span class="p">;</span>
-
-<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Display array content: "</span><span class="p">;</span>
-<span class="k">for</span><span class="p">(</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="n">SIZE</span><span class="p">;</span> <span class="n">count</span><span class="o">++</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-    <span class="n">pointer</span><span class="o">++</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<p>Display the array content backwards</p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"\mDisplya numbers backwards: "</span><span class="p">;</span>
-<span class="k">for</span><span class="p">(</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="n">SIZE</span><span class="p">;</span> <span class="n">count</span><span class="o">++</span><span class="p">)</span>
-<span class="p">{</span>
-    <span class="n">pointer</span><span class="o">--</span><span class="p">;</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">&lt;&lt;</span> <span class="s">" "</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<blockquote>
-  <p>NOTE: increment operator adds the size of one integer to pointer. As a result it points to the next element in the array. Decrement operator substracts the size of one integer accordingly.</p>
-</blockquote>
-
-<h3 id="initializing-pointers"><strong>Initializing Pointers</strong></h3>
-
-<blockquote>
-  <p>NOTE: Pointers can be initialized with the address of an existing object</p>
-</blockquote>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">value</span><span class="p">;</span>
-<span class="kt">int</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">value</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h3 id="comparing-pointers"><strong>Comparing Pointers</strong></h3>
-<blockquote>
-  <p>NOTE: First address considered as lower than the second. Can compare with <code class="highlighter-rouge">&gt;&lt; == != &gt;= &lt;=</code></p>
-</blockquote>
-
-<p>For example all of the following statements are true:</p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="k">if</span> <span class="p">(</span><span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">!=</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-</code></pre></div></div>
-<h4 id="comparing-address"><em>Comparing address</em></h4>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="n">pointerTo</span> <span class="o">&lt;</span> <span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing address"</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h4 id="comparing-values"><em>Comparing values</em></h4>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="o">*</span><span class="n">pointerTo</span> <span class="o">==</span> <span class="o">*</span><span class="n">pointer</span><span class="p">)</span> <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Comparing values"</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h3 id="pointers-as-function-parameters"><strong>Pointers as Function Parameters</strong></h3>
-<blockquote>
-  <p>NOTE: Pointer as a function argument act very similar to a reference variable</p>
-</blockquote>
-
-<h3 id="focus-on-software-engineering-dynamic-memory-allocation"><strong>Focus on Software Engineering: Dynamic Memory Allocation</strong></h3>
-<h3 id="focus-on-software-engineering-returning-pointers-from-functions"><strong>Focus on Software Engineering: Returning Pointers from Functions</strong></h3>
-<h3 id="using-smart-pointers-to-avoid-memory-leaks"><strong>Using Smart Pointers to Avoid Memory Leaks</strong></h3>
-<h3 id="focus-on-problem-solving-and-program-design-a-case-study"><strong>Focus on Problem Solving and Program Design: A Case Study</strong></h3>
+<h4 id="supports-iterator"><em>Supports iterator</em></h4>
 
     
     <div class="back-to-top">
